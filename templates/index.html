@@ -23,70 +23,47 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-primary"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">{{company_name}}</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+    {% include "nav.html" %}
+    <img
+      id="banner"
+      class="img-fluid mt-1"
+      src="static/jobs.jpg"
+      alt="Cover Image"
+      width="800px"
+      height="350px"
+    />
+    <div class="container mt-4 mb-4">
+      <h2 class="text-center mt-4 mb-3">About {{company_name}}</h2>
+      <div class="row mt-4 mb-4">
+        <div class="col-6">
+          <p class="lead">
+            Officia consectetur sit id pariatur commodo aliquip. Culpa eu
+            laborum proident proident nostrud non pariatur eu sunt eiusmod
+            deserunt tempor. Nostrud qui eiusmod nisi sit pariatur proident
+            cillum id est labore exercitation. Ea quis nulla duis tempor enim
+            sint consequat et dolor ea velit. Exercitation labore exercitation
+            cillum sint proident consequat et do irure sunt pariatur sint
+            excepteur commodo. Occaecat anim labore do aute elit consequat
+            nostrud.Anim dolor do ipsum aliquip pariatur fugiat. Aute pariatur
+            ex ipsum veniam velit laboris. Aliquip occaecat culpa exercitation
+            ea amet ipsum. Magna ullamco ea non amet voluptate elit. Ullamco
+            adipisicing tempor anim in dolor sit Lorem cillum. Adipisicing ex
+            fugiat fugiat enim ullamco Lorem nulla do esse est consequat. Anim
+            fugiat irure dolore irure aliqua consectetur nulla ea enim. Mollit
+            culpa non occaecat sunt amet. Proident Lorem enim labore commodo
+            ullamco incididunt culpa eu ad voluptate.
+          </p>
+        </div>
+        <div class="col-6">
+          <img
+            src="/static/people-at-work.jpg"
+            alt="People at Work"
+            height="100%"
+            width="100%"
+            object-fit="cover"
+          />
         </div>
       </div>
-    </nav>
-    <div class="container mt-4 mb-4">
-      <!-- <h1 class="text-center">{{company_name}} Carrers</h1> -->
-      <img
-        id="banner"
-        class="img-fluid"
-        src="static/cover.jpg"
-        alt="Cover Image"
-        width="800px"
-        height="350px"
-      />
-
-      <h2 class="text-center mt-4">About {{company_name}}</h2>
-      <p class="lead">
-        Officia consectetur sit id pariatur commodo aliquip. Culpa eu laborum
-        proident proident nostrud non pariatur eu sunt eiusmod deserunt tempor.
-        Nostrud qui eiusmod nisi sit pariatur proident cillum id est labore
-        exercitation. Ea quis nulla duis tempor enim sint consequat et dolor ea
-        velit. Exercitation labore exercitation cillum sint proident consequat
-        et do irure sunt pariatur sint excepteur commodo. Occaecat anim labore
-        do aute elit consequat nostrud.
-      </p>
 
       <h2 class="text-center mt-5 mb-4">Open Positions</h2>
 
@@ -98,5 +75,6 @@
         <button class="btn btn-primary btn-lg">Contact Us</button>
       </div>
     </div>
+    {% include "footer.html" %}
   </body>
 </html>

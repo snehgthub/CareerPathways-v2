@@ -20,6 +20,12 @@ jobs = [
         "title": "DevOps Engineer",
         "location": "Remote",
         "salary": "10,00,000"
+    },
+    {
+        "id": 4,
+        "title": "Cloud Admin",
+        "location": "Remote",
+        "salary": "10,00,000"
     }
 ]
 @app.route('/')
